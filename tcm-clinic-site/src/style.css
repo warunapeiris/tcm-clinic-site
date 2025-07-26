@@ -94,3 +94,48 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* Layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+}
+main {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav a {
+  margin: 0 0.5rem 0.5rem 0;
+}
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 0.5rem;
+  }
+  main {
+    display: block;
+    padding: 0.5rem;
+  }
+  section {
+    margin-bottom: 2rem;
+  }
+}
