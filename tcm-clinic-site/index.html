@@ -5,11 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TCM Clinic</title>
-  <link rel="stylesheet" href="src/style.css" />
+   <link rel="icon" href="/favicon.ico" />
+   <!-- PWA & Favicon support -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+  <script type="module" src="src/main.js"></script>
 </head>
 <body>
-  <h1>Welcome to TCM Clinic</h1>
-  <p>Your place for traditional Chinese medicine.</p>
-  <script type="module" src="src/main.js"></script>
+  <header>
+    <h1>TCM Clinic</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Welcome to TCM Clinic</h2>
+      <p>Your place for traditional Chinese medicine.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Acupuncture</li>
+        <li>Herbal Remedies</li>
+        <li>Cupping Therapy</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TCM Clinic. All rights reserved.</p>
+  </footer>
 </body>
 </html>
