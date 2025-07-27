@@ -1,4 +1,8 @@
 :root {
+  /* Use Roboto across the site */
+body {
+  font-family: 'Roboto', sans-serif;
+}
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -138,4 +142,14 @@ nav a {
   section {
     margin-bottom: 2rem;
   }
+  .hero {
+  background: url('/images/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
 }
